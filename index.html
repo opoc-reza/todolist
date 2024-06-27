@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoList👑</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="setting">🌑</div>
+    <div class="modal">
+      <form action="" class="form">
+        <div class="form-top">
+          <h1 class="form__title">Add a New todo</h1>
+          <i class="form__close uil uil-times"></i>
+        </div>
+        <div class="form-middle">
+          <div class="form-middle-item">
+          <h4 class="form__input-title">Title</h4>
+          <input type="text" class="form__input" />
+        </div>
+          <div class="form-middle-item">
+            <h4 class="form__desc-title">Description</h4>
+            <textarea name="" id="form__description"></textarea>
+          </div>
+        </div>
+        <div class="form-end">
+          <a href="" class="form-end__submit">submit</a>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <div class="wrappers">
+        <div class="addTodo">
+          <div class="addTodo__icon">+</div>
+          <h2 class="addTodo__title">Add New Todo</h2>
+        </div>
+        <div class="todo">
+          <div class="todo-top">
+            <h1 class="todo__title">${item.title}</h1>
+
+            <p class="todo__caption">${item.desc}</p>
+          </div>
+          <div class="todo-bottom">
+            <p class="todo__date">${item.date}</p>
+            <div class="todo__option">|+_+|
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
